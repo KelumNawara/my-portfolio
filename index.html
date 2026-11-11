@@ -8,7 +8,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         
         body { 
-            background-color: #ffffff; 
+            background-color: #0c6a70; 
             display: flex; 
             flex-direction: column; 
             align-items: center; 
@@ -55,6 +55,13 @@
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
 
+        /* Background color for the first 3 pages */
+        .portfolio-container .page-wrapper:nth-child(1),
+        .portfolio-container .page-wrapper:nth-child(2),
+        .portfolio-container .page-wrapper:nth-child(3) {
+            background-color: #0c6a70;
+        }
+
         .page-wrapper.visible {
             opacity: 1;
             transform: translateY(0);
@@ -65,7 +72,7 @@
             height: auto; 
             display: block; 
             border-radius: 6px;
-            box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+            box-shadow: none;
         }
         
         /* Relative hotspot styling ensures links scale proportionally with the image size on mobile */
